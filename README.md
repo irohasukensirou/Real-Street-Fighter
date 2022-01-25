@@ -1,4 +1,4 @@
-# street-fighter
+# Real-Street-Fighter
 Output the subject's movement as a technique in the game.
 
 ## 概要
