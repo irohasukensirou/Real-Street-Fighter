@@ -22,6 +22,9 @@ pipコマンドでまとめて取り込める。
 ```
 pip install -r requirements.txt
 ```
+また、Pytorchを使うため以下のサイトから自分の環境に合わせてライブラリをインストールする。
+
+https://pytorch.org
 #### 機材
 - Webカメラ
 - Street Fighter V(Steamで購入できる)
