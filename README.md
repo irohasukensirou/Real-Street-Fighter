@@ -55,4 +55,3 @@ python main.py
 pytorch-openposeは、OpenPoseをPytorchで動かせるようにしたものであり、以下のリンクから利用することができる。
 
 https://github.com/Hzzone/pytorch-openpose
-
