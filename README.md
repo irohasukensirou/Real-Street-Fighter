@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - Street Fighter V(Steamで購入できる)
 
 #### モデルのダウンロード
-以下のリンクから`body_pose_model.pthダウンロードし、`model`フォルダ内に入れる。
+以下のリンクから`body_pose_model.pth`をダウンロードし、`model`フォルダ内に入れる。
 
 https://www.dropbox.com/sh/7xbup2qsn7vvjxo/AABWFksdlgOMXR_r5v3RwKRYa?dl=0
 
