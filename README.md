@@ -6,6 +6,13 @@ Output the subject's movement as a technique in the game.
 プレイヤーはStreet Fighter Vという格闘ゲームにおける技の動きを真似て、それをカメラでリアルタイムで撮影する。<br>
 プログラムは、撮影したものが何の技を繰り出しているかを自動で識別し、ゲーム内にその技のコマンドを送ることで技が出るという流れになっている。<br>
 
+## デモ映像
+
+
+https://user-images.githubusercontent.com/52659785/151023653-dfe616ad-49e3-4249-8e7b-31638bee4842.mp4
+
+
+
 ## 要件
 #### 環境
 Python 3.7上で動くことを想定。
