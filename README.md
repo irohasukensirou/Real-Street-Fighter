@@ -5,13 +5,12 @@ Output the subject's movement as a technique in the game.
 こちらの動きに合わせてゲーム内のキャラが動いたり、技を出すシステムを作った。<br>
 プレイヤーはStreet Fighter Vという格闘ゲームにおける技の動きを真似て、それをカメラでリアルタイムで撮影する。<br>
 プログラムは、撮影したものが何の技を繰り出しているかを自動で識別し、ゲーム内にその技のコマンドを送ることで技が出るという流れになっている。<br>
-
+<br>
 ## デモ映像
-
 
 https://user-images.githubusercontent.com/52659785/151023653-dfe616ad-49e3-4249-8e7b-31638bee4842.mp4
 
-
+<br>
 
 ## 要件
 #### 環境
@@ -32,6 +31,8 @@ pip install -r requirements.txt
 
 https://www.dropbox.com/sh/7xbup2qsn7vvjxo/AABWFksdlgOMXR_r5v3RwKRYa?dl=0
 
+<br>
+
 ## 使い方
 1. PCにカメラを繋ぎ、カメラに全身が写ることを確認する。
 2. Street Fighter Vを起動し対戦を開始する(トレーニングモードでCPUと対戦することを推奨)。
@@ -50,6 +51,7 @@ python main.py
 | 右キック | 右足を前に繰り出す |
 | 鎖骨割り | 左右どちらかの腕を上から下に振り下ろす |
 | 昇竜拳 | 左右どちらかの腕をしたから上に振り上げる |
+<br>
 
 ## 詳細
 #### ディープラーニングによる技の識別
