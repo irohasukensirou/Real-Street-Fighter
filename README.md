@@ -26,7 +26,7 @@ pip install -r requirements.txt
 https://pytorch.org
 #### 機材
 - Webカメラ
-- Street Fighter V(Steamで購入できる)
+- [Street Fighter V](https://store.steampowered.com/app/310950/Street_Fighter_V/)
 
 #### モデルのダウンロード
 以下のリンクから`body_pose_model.pth`をダウンロードし、`model`フォルダ内に入れる。
@@ -63,6 +63,6 @@ python main.py
 
 #### pytorch-openposeを利用した骨格点検出
 カメラに映った人物から骨格点データを得るために、OpenPoseという、人物の骨格を深層学習で推定するシステムを使用した。<br>
-pytorch-openposeは、OpenPoseをPytorchで動かせるようにしたものであり、以下のリンクから利用することができる。
+pytorch-openposeは、OpenPoseをPytorchで動かせるようにしたものであり、詳細は以下を参照。
 
 https://github.com/Hzzone/pytorch-openpose
