@@ -31,6 +31,7 @@ cap.set(4, 150)
 #カメラの映像から技を識別し、ゲーム内で出力
 if cap.isOpened():
     while True:
+        #撮影した映像を骨格データに変換
         ret, oriImg = cap.read()
         cv2.imshow('frame', oriImg)
         all_peaks = body_estimation(oriImg)
