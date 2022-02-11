@@ -29,6 +29,7 @@ def jump_move(all_peaks, pre_all_peaks, threshold):
     if p == 18:
         return True
 
+#移動を実行する関数
 def movement_exe(type_of_movement):
     #引数が0なら左移動、1なら右移動、2ならジャンプを実行
     if type_of_movement == 0:
