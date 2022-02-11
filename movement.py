@@ -6,7 +6,7 @@ from waza import sleept_time
 def left_move(all_peaks, pre_all_peaks, threshold):
     p = 0
     for i in range(18):
-        if ((all_peaks[i][0][0] - threshold) < pre_all_peaks[i][0][0]):
+        if ((all_peaks[i][0][0] - threshold) > pre_all_peaks[i][0][0]):
             p += 1
     if p == 18:
         return True
