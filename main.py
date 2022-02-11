@@ -7,7 +7,7 @@ from openpose.body import Body
 from waza import Skill
 from waza import sleept_time
 from make_angle import calc_angle
-from movement import left_move, right_move, jump_move
+from movement import left_move, right_move, jump_move, movement_exe
 from net import Net
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -48,29 +48,22 @@ if cap.isOpened():
             skill = Skill(waza_index)
             skill.get_skill()
         pre_waza = waza_index
+
         #移動認識
         if waza_index == 8:
             no_count += 1
             if no_count >= 2:
                 if left_move(all_peaks, pre_all_peaks, 20):
                     #左移動
-                    win32api.keybd_event(68, 0, win32con.KEYEVENTF_KEYUP, 0)
-                    print("左移動")
-                    win32api.keybd_event(65, 0, 0, 0)
+                    movement_exe(2)
                     pre_all_peaks = all_peaks
                 elif right_move(all_peaks, pre_all_peaks, 20):
                     #右移動
-                    win32api.keybd_event(65, 0, win32con.KEYEVENTF_KEYUP, 0)
-                    print("右移動")
-                    win32api.keybd_event(68, 0, 0, 0)
+                    movement_exe(1)
                     pre_all_peaks = all_peaks
                 elif jump_move(all_peaks, pre_all_peaks, 0):
                     #ジャンプ
-                    win32api.keybd_event(83, 0, win32con.KEYEVENTF_KEYUP, 0)
-                    print("ジャンプ")
-                    win32api.keybd_event(87, 0, 0, 0)
-                    sleep(sleept_time)
-                    win32api.keybd_event(87, 0, win32con.KEYEVENTF_KEYUP, 0)
+                    movement_exe(2)
             else:
                 pre_all_peaks = all_peaks
 
