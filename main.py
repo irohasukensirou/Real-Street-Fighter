@@ -55,7 +55,7 @@ if cap.isOpened():
             if no_count >= 2:
                 if left_move(all_peaks, pre_all_peaks, 20):
                     #左移動
-                    movement_exe(2)
+                    movement_exe(0)
                     pre_all_peaks = all_peaks
                 elif right_move(all_peaks, pre_all_peaks, 20):
                     #右移動
