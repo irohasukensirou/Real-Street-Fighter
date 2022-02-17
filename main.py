@@ -28,14 +28,15 @@ cap = cv2.VideoCapture(0)
 cap.set(3, 200)
 cap.set(4, 150)
 
-#カメラの映像から技を識別し、ゲーム内で出力
+#カメラの映像から技を識別し、ゲーム内で出力する
 if cap.isOpened():
     while True:
-        #撮影した映像を骨格データに変換
+        #撮影した人物から骨格点データを取得
         ret, oriImg = cap.read()
         cv2.imshow('frame', oriImg)
         all_peaks = body_estimation(oriImg)
         data = []
+        #骨格点データを座標間の角度データに変換
         angle = calc_angle(all_peaks)
         data.append(angle)
         x = np.array(data)
