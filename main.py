@@ -5,7 +5,6 @@ import win32api, win32con
 from time import sleep
 from openpose.body import Body
 from waza import Skill
-from waza import sleept_time
 from make_angle import calc_angle
 from movement import left_move, right_move, jump_move, movement_exe
 from net import Net
@@ -45,7 +44,7 @@ if cap.isOpened():
         waza_index = max_index.item()
         #技の出力
         if waza_index != pre_waza_index:
-            skill = Skill(waza_index)
+            skill = Skill(waza_index, sleep_time=0.05)
             skill.get_skill()
         pre_waza_index = waza_index
 
